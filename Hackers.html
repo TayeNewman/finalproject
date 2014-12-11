@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FinalProject</title>
+  <link rel="stylesheet" href="BobbleHeadProject.js">
+<link rel="stylesheet" href="animate.css">
+<link rel="stylesheet" href="styles.css">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans|Exo|Fjalla+One' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../transformJS.js"></script>
+<script type="text/javascript" src="../jquery.bobble.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <input type="checkbox" id="toggle" name="toggle">
+
+  <ul class="nav">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="about.html">Digital Portfolio</a></li>
+      <li><a href="corridor1.html">Water Cooler</a></li>
+      <!-- <li><a href="digital.html">Digital</a></li> -->
+      <!-- <li><a href="content.html">Content</a></li>
+      <li><a href="websites.html">Websites</a></li> -->
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="Hackers.html">Hackers Only</a></li>  
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="wrapper">
+      <label for="toggle">☰ Menu</label>
+
+<!--   <video class="bgvid"> -->
+
+    <video autoplay poster="images/DigzBG.png" class="bgvid">
+      <source src="video/vidcode.webm" type="video/webm"/>
+     </source src="video/vidcode.mp4" type="video/mp4"/>
+    </video>
+
+  <div class="home">
+
+ <!--  <div class="container"> -->
+ 
+  <!--   <p class="style"></p> -->
+    <div class="block">
+
+      <h1>Restricted Area</h1>
+     <!--  <p>Smartie Pants ONLY beyond this point.</p> -->
+
+<FORM>
+<input class="protect" type="button" value="Hack Into Restricted Area" onClick="passWord()">
+</FORM>
+<p class="portfolio">Good Luck!</p>
+        
+        
+  </div> <!-- end of container -->
+  </div> <!-- end of block -->
+
+  </div> <!-- end of wrapper -->
+
+  <div class="footer">© 2014 Taye Newman</div>
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('The Password Is An Octothorpe',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "#") {
+alert('WOOT! You Know Your Sh*t. Click OK to proceed.');
+window.open('EggOne.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Incorrect. Hint: The answer is one character. Please try again.','');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<!-- <CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER> -->
+    <!-- second password  -->
+
+
+</body>
+   
+
+</html>

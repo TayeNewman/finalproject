@@ -1,0 +1,816 @@
+.clearfix:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } .clearfix {display: inline-block; } html[xmlns] .clearfix {display: block; } * html .clearfix {height: 1%; } 
+
+    * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+    article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+    input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+* /*{border:1px solid red}*/
+
+
+    body {
+      color:white;
+      /*position: relative;*/
+      background-color: black;
+    }
+
+
+    .homewrapper {
+      padding:5px 0;
+      /*background:url(images/DigzBG.png);*/
+      background-size:cover;
+      width: 100%;
+      transition: all 0.5s;
+      position: relative;
+      left:0;
+      clear: both;
+    }
+
+
+    .wrapper {
+      padding:55px;
+      padding-top: 10px;
+      /*background:url(images/DigzBG.png);*/
+      background-size:cover;
+      width: 100%;
+      transition: all 0.5s;
+      position: relative;
+      left:0;
+      clear: both;
+    }
+
+          /* Portrait tablet and small desktops */
+          @media (max-width: 940px) {
+            .wrapper {padding: 10%;}
+        }
+           
+          /* Landscape phone to portrait tablet */
+          @media (max-width: 768px) {
+            .wrapper {padding: 7%;}
+          }
+           
+          /* Landscape phones and down */
+          @media (max-width: 480px) { 
+            .wrapper{padding:1%;}
+            } 
+
+    .aboutcontainer {
+      margin-top: 100px;
+      text-align: center;
+     /* background-color: black;
+      /*display: inline-block;*/
+    }
+
+
+
+   /* star wars crawl*/
+
+  .blogcontainer {
+      /*margin-top: 100px;
+      padding-top: 50px;*/
+      text-align: center;
+      background-color: gray;
+      display: inline-block;
+    }
+
+    .blogsubtitle {
+      font-size: 30px;
+      font-family: 'exo' sans-serif;
+      color:lightblue;
+    }
+
+    .mediafloatleft {
+      float: left;
+      padding-right: 10px;
+    }
+
+    .mediafloatright {
+      float: right;
+      padding-left: 10px;
+    }
+
+
+   .quote {
+    color: hotpink;
+    padding: 10px;
+    margin: 0;
+    font-size: 40px;
+   /* background-color: black;*/
+    text-align: center;
+   }
+
+         /* Portrait tablet and small desktops */
+          @media (max-width: 940px) {
+            .quote {font-size: 40px;}
+        }
+           
+          /* Landscape phone to portrait tablet */
+          @media (max-width: 768px) {
+            .quote {font-size: 30px;}
+          }
+           
+          /* Landscape phones and down */
+          @media (max-width: 480px) { 
+            .quote{font-size: 25px;}
+            } 
+
+   .start  {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'exo'  sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    color: gray;
+    width: 85%;
+    opacity: 0;
+    z-index: 1;
+              -webkit-animation: intro 5s ease-out;
+            -moz-animation: intro 5s ease-out;
+            -ms-animation: intro 5s ease-out;
+            -o-animation: intro 5s ease-out;
+            animation: intro 5s ease-out;
+          }
+             
+          @-webkit-keyframes intro {
+            0% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+          }
+
+          @-moz-keyframes intro {
+            0% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+          }
+
+          @-ms-keyframes intro {
+            0% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+          }
+
+          @-o-keyframes intro {
+            0% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+          }
+
+          @keyframes intro {
+            0% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+          }
+
+
+
+   .titles {
+                position: absolute;
+                padding: 0;
+                width: 18em;
+                height: 50em;
+                bottom: 0;
+                left: 50%;
+                margin-left: -9em;
+                font-size: 350%;
+                font-weight: bold;
+                text-align: justify;
+                overflow: hidden;
+                transform-origin: 50% 100%;
+                transform: perspective(300px) rotateX(25deg);
+                -webkit-transform-origin: 50% 100%;
+                -moz-transform-origin: 50% 100%;
+                -ms-transform-origin: 50% 100%;
+                -o-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+                -webkit-transform: perspective(300px) rotateX(25deg);
+                -moz-transform: perspective(300px) rotateX(25deg);
+                -ms-transform: perspective(300px) rotateX(25deg);
+                -o-transform: perspective(300px) rotateX(25deg);
+                transform: perspective(300px) rotateX(25deg);
+
+              }
+
+
+              .titles:after {
+                        position: absolute;
+                        content: ' ';
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 60%;
+                        background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+                        pointer-events: none;
+                        background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+                        background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+                        background-image: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+                        background-image: -o-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+                        background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+                        pointer-events: none;
+                        
+                      }
+
+    .titlecontent {
+
+
+              position: absolute;
+              text-align: center;
+              font-weight: 'exo', sans-serif;
+              color: #ff6;
+              top: 100%;
+              animation: scroll 100s linear 4s infinite;
+              -webkit-animation: scroll 100s linear 4s infinite;
+            }
+
+            @keyframes scroll {
+              0% { top: 100%; }
+              100% { top: -100%; }
+            }
+
+            @-webkit-keyframes scroll {
+              0% { top: 100%; }
+              100% { top: -100%; }
+            }
+
+     .titles h1.center, .titles h1 {
+
+        text-align: center;
+        padding: 0;
+        display: block;
+        color: hotpink;
+        font-size: 90px;
+     }       
+
+          /* Portrait tablet and small desktops */
+          @media (max-width: 940px) {
+            .titles h1.center, .titles h1 {font-size: 90px;}
+          }
+           
+          /* Landscape phone to portrait tablet */
+          @media (max-width: 768px) {
+            .titles h1.center, .titles h1  {font-size: 65px;}
+          }
+           
+          /* Landscape phones and down */
+          @media (max-width: 480px) { 
+            .titles h1.center, .titles h1  {font-size: 40px;}
+            } 
+
+     .titles p.center, .titles p {
+
+          text-align: justify;
+          padding:0;
+          display: block;
+          color: hotpink;
+          font-size: 65px;
+     }       
+
+
+               /* Portrait tablet and small desktops */
+          @media (max-width: 940px) {
+            .titles p.center, .titles p {font-size: 65px;}
+        }
+           
+          /* Landscape phone to portrait tablet */
+          @media (max-width: 768px) {
+            .titles p.center, .titles p {font-size: 50px;}
+          }
+           
+          /* Landscape phones and down */
+          @media (max-width: 480px) { 
+            .titles p.center, .titles p{font-size: 35px;}
+            } 
+
+
+     /*end of star wars crawl*/
+
+
+    .p {
+      /*line-height: 2;*/
+      font-size: 25px;
+      font-family: 'Exo' sans-serif;
+      color: black;
+
+    }
+
+           /* Portrait tablet and small desktops */
+          @media (max-width: 940px) {
+            .p {font-size: 25px;}
+          }
+           
+          /* Landscape phone to portrait tablet */
+          @media (max-width: 768px) {
+            .p {font-size: 20px;}
+          }
+           
+          /* Landscape phones and down */
+          @media (max-width: 480px) { 
+            .p {font-size: 18px;}
+            } 
+
+
+/*beginning of navigation*/
+
+    a {
+      color:white;
+      text-decoration: none;
+      border-bottom:1px dotted grey;
+      font-family: 'Exo' sans-serif;
+
+    }
+
+      ul.nav {
+        background: black;
+        list-style: none;
+        padding:0;
+        margin:0;
+        position:fixed;
+        height:100%;
+        width: 25%;
+        right:-25%;
+        transition: all 0.5s;
+        z-index: 3;
+      }
+
+      ul.nav a {
+        border-bottom: 1px, solid pink;
+        font-size: 30px;
+        display: block;
+        padding: 35px;
+        transition: all 0.5s;
+       }
+           
+          /* Landscape phone to portrait tablet */
+          @media (max-width: 768px) {
+            .a {font-size: 20px; padding:20px;}
+          }
+           
+          /* Landscape phones and down */
+          @media (max-width: 480px) { 
+            .a {font-size: 18px; padding: 5px;}
+            } 
+
+      ul.nav a:hover {
+        background: purple;
+
+      }
+
+    input#toggle {
+      display: none;
+
+    }
+
+    input#toggle:checked + ul.nav {
+      right:0;
+      
+    }
+
+    input#toggle:checked ~ .wrapper {
+      width:75%;
+
+    }
+
+    label[for="toggle"] {
+      position: fixed;
+      top:10px;
+      left:10px;
+      color: white;
+      font-size: 50px;
+      padding-bottom: 50px;
+      /*background-color: black;*/
+      z-index: 99999;
+      font-family: 'Exo', sans-serif;
+    }
+
+    /*end of navigation*/
+
+    /*rocket animation start*/
+
+
+    /* initial state */
+  .outerspace {
+    position: relative;
+    height: 400px;
+    /*background: #0c0440 url(/images/outerspace.jpg);*/
+    color: #fff;
+  }
+  .rocket {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    -webkit-transition: 5s ease-in;
+    -moz-transition: 5s ease-in;
+    -o-transition: 5s ease-in;
+    transition: 5s ease-in;
+  }
+  .rocket div {
+    width: 92px;
+    height: 215px;
+    background: url(/images/rocket.png width:"300") no-repeat;
+    -webkit-transition: 6s ease-in-out;
+    -moz-transition: 6s ease-in-out;
+    -o-transition: 6s ease-in-out;
+    transition: 6s ease-in-out;
+  }
+
+  /* hover final state */
+  #outerspace:hover div.rocket {
+    -webkit-transform: translate(1500px,-200px);
+    -moz-transform: translate(1500px,-200px);
+    -o-transform: translate(1500px,-200px);
+    -ms-transform: translate(1500px,-200px);
+    transform: translate(1500px,-200px);
+  }
+  #outerspace:hover div.rocket div {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  /*rocket animation end*/
+
+    .h1 {
+      font-size: 50px;
+      font-family: 'Exo', sans-serif;
+     
+
+    }
+             /* Portrait tablet and small desktops */
+          @media (max-width: 940px) {
+            .h1 {font-size: 50px;}
+        }
+           
+          /* Landscape phone to portrait tablet */
+          @media (max-width: 768px) {
+            .h1 {font-size: 50px;}
+          }
+           
+          /* Landscape phones and down */
+          @media (max-width: 480px) { 
+            .h1{font-size: 35px;}
+            } 
+
+
+    .portfolio {
+      font-size: 20px;
+      font-family: 'Exo', sans-serif;
+      color: gray;
+      text-align: left;
+      /*padding-left: 10%;
+      padding-right: 10%;*/
+     
+     /* padding-bottom: 5%;*/
+      /*width: 90%;*/
+    }
+
+    .portfoliotitle {
+      font-size: 40px;
+      font-family: 'Exo',sans-serif;
+      color: hotpink;
+      padding-left: 30px;
+      text-align: left;
+
+    }
+
+    .VideoPortfolio {
+      padding:5%;
+      background-color: black;
+      width: 95%;
+      /*text-align:center;*/
+      display: inline-block;
+     /* box-shadow: 0px 0px 3px gray;*/
+
+    }
+
+    /*.videocol {
+
+      -webkit-column-count: 2;
+      -moz-webkit-column-count: 2;
+      -ms-webkit-column-count: 2;
+      -o-webkit-column-count: 2;
+      webkit-column-count: 2;
+
+    }*/
+
+/*water cooler series questions*/
+    .SocialText {
+      font-size: 95px;
+      font-family: 'Fjalla One', sans-serif;
+      color:darkslateblue;
+      text-align: center;
+    }
+
+   /* end of watercooler questions*/
+
+    .home {
+      padding: 17%;
+      clear: both;
+    }
+
+    /*beginning of water cooler question*/
+
+    .container {
+      padding:10px;
+      position: fixed;
+      bottom: 0px;
+      width: 60%;
+      left: 20%;
+      display: inline-block;
+
+      background-color: rgba(255,255,255,0.5);
+     
+    }
+
+    /*end of water cooler question*/
+
+    .title {
+      font-family: 'Exo', sans-serif;
+      font-size: 30px;
+      color: black;
+      text-align: center;
+    }
+
+    /*Taye Easter Egg*/
+
+    .Egg1 {
+        position: fixed; right: 0; bottom: 0;
+        min-width: 100%; min-height: 100%;
+        width: auto; height: auto; z-index: -100;
+        background: url(images/DigzBG.png) no-repeat;
+        background-size: cover;
+        
+        }
+
+        /*Twitter start*/
+
+       .tweet {
+        display: inline-block;
+        width: 150px;
+        margin: 0 auto;
+        text-align: center;
+
+       }
+
+       .widget {
+        text-align: center;
+        padding: 10px;
+       }
+       
+
+    .marquee {
+      font-family: 'Exo', sans-serif;
+      font-size: 60px;
+      color: black;
+      text-shadow: 1px 1px 0px #000010;
+    }
+
+    .marqueeEgg1 {
+      font-family: 'Exo', sans-serif;
+      font-size: 25px;
+      color:lightblue;
+      padding-top: 20px;
+    }
+
+    .marqueeEgg2 {
+      font-family: 'Exo', sans-serif;
+      font-size: 25px;
+      color:pink;
+      padding-top: 20px;
+    }
+
+    .animated{
+          /*position: absolute;*/
+          width: 30%;
+          height: 30%;
+          top: 0; left: 50%; bottom: 0; right: 0;
+          margin: auto;
+          display: inline-block;
+      }
+
+      img.animated {
+        width: 20%;
+        position: relative;
+        /*text-align: center;*/
+      }
+         
+
+    .speciallink {
+      font-size: 50px;
+      font-family: 'Exo', sans-serif;
+      color: hotpink;
+      text-decoration:none;
+      padding: 20px;
+
+    }
+    
+    .submit {
+        background-color: blue;
+        color: black;
+        border-radius: 3px;
+        border-style: solid gray 1px;
+    }
+
+     .password {
+          color: grey;
+        }
+
+        .form {
+          color: black;
+          display: block;
+        }
+
+        .container {
+              /*border: 0px solid #e5e5e5;
+              border-bottom: 0px solid #d4d4d4;*/
+              margin-bottom: 40px; 
+              text-align: center;
+              display: inline-block;
+            }
+
+           
+
+   .block {
+            background-color: black;
+          /*  color: white;*/
+            /*width: 90%;*/
+            padding: 10px 10px;
+            display: inline-block;
+            text-align: center;
+            font-family: 'Exo' sans-serif;
+
+                    }  
+     .example {
+      width: 100%;
+      text-align: center;
+     }                        
+
+    .protect {
+          font-family: 'Exo', sans-serif;
+          font-size: 45px;
+          background: #82409D;
+          color: white;
+          width: 100%;
+          position: relative;
+          top: 0px;
+          padding: 10px;
+          border:none;
+          border-radius: 5px;
+          box-shadow: 0px 5px 0px #4F0D6A;
+          transition: all 0.2s;
+        }
+
+             /* Landscape phone to portrait tablet */
+          @media (max-width: 940px) {
+            .protect {font-size: 35px; padding:8px;}
+          }
+           
+
+          @media (max-width: 868px) {
+            .protect {font-size: 35px; padding:8px;}
+          }
+           
+          /* Landscape phones and down */
+          @media (max-width: 480px) { 
+            .protect {font-size: 10px; padding: 5px;}
+            } 
+
+        .protect:active {
+          top: 5px;
+          background: #8e44ad ;
+          box-shadow: 0px 3px 0px #5B117A;
+        }
+
+     .cta {
+          font-family: 'Exo', sans-serif;
+          font-size: 35px;
+          background: #82409D;
+          color: white;
+          width: 50%;
+          text-align: center
+          top: 0px;
+          padding: 10px;
+          border:none;
+          border-radius: 5px;
+          box-shadow: 0px 5px 0px #4F0D6A;
+          transition: all 0.2s;
+        }
+
+        /*This is the text that broke BG video - every page. How can that be?*/
+
+                /* Landscape phone to portrait tablet */
+          /*@media (max-width: 940px) {
+            .cta {font-size: 40px; padding:8px;}
+          }*/
+           
+
+          /*@media (max-width: 868px) {
+            .cta {font-size: 30px; padding:8px;}
+          }*/
+           
+          /* Landscape phones and down */
+         /* @media (max-width: 480px) { 
+            .cta {font-size: 15px; padding: 5px;}*/
+            }
+
+        .cta:active {
+          top: 5px;
+          background: #8e44ad ;
+          box-shadow: 0px 3px 0px #5B117A;
+        }   
+
+
+    .footer {
+        text-align: center;
+        width: 100%
+        position: fixed; bottom: 0;
+        padding-top: 10px;
+        font-family: 'Exo' sans-serif;
+        font-size: 14px;
+        color:darkgray;
+      }
+
+ /*start of background video*/     
+
+      .bgvid {
+        position: fixed; right: 0; bottom: 0;
+        min-width: 100%; min-height: 100%;
+        width: auto; height: auto; z-index: -100;
+        background: url("images/DigzBG.png") no-repeat;
+        background-size: cover;
+        
+        }
+
+ /*end of background video*/       
+
+  /*      contact form*/
+
+  #page-wrap {
+  width: 660px;
+  background: black;
+  color: white;
+  padding: 100px 50px 20px 50px;
+  margin: 20px auto;
+  min-height: 500px;
+  height: auto !important;
+  height: 500px;
+  clear: both;
+}
+
+#contact-area {
+  width: 600px;
+  margin-top: 25px;
+}
+
+#contact-area input, #contact-area textarea {
+  padding: 5px;
+  width: 471px;
+  font-family: 'Exo', sans-serif;
+  font-size: 25px;
+  margin: 0px 0px 10px 0px;
+  border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+  height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+  border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+          font-family: 'Exo', sans-serif;
+          font-size: 25px;
+          background: #82409D;
+          color: white;
+          width: 25%;
+          position: relative;
+          top: 0px;
+          padding: 10px;
+          border:none;
+          border-radius: 5px;
+          box-shadow: 0px 5px 0px #4F0D6A;
+          transition: all 0.2s;
+        }
+
+        .submit-button :active {
+          top: 5px;
+          background: #8e44ad ;
+          box-shadow: 0px 3px 0px #5B117A;
+        }
+
+label [for=contact] {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 100px;
+  padding-top: 5px;
+  font-size: 1.4em;
+  color: black;
+}
+
+/*end of contact form*/
+
+
+
